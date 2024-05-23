@@ -21,7 +21,7 @@ const Login = () => {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3001/sign/login",
+        "https://mailbox-stream-vercel.vercel.app/sign/login",
         formData
       );
       const token = response.data.token;

@@ -11,7 +11,7 @@ const SentMailComponent = () => {
   const token = useSelector((state) => state.auth.isToken);
   const fetchMails = async () => {
     try {
-      const response = await axios.get(`http://localhost:3001/mail/sent`, {
+      const response = await axios.get(`https://mailbox-stream-vercel.vercel.app/mail/sent`, {
         headers: {
           Authorization: `${token}`,
         },

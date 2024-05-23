@@ -30,7 +30,7 @@ const ResetPage = () => {
         }
 
         try {
-            const response = await axios.post(`http://localhost:3001/pass/newPassword`, {
+            const response = await axios.post(`https://mailbox-stream-vercel.vercel.app/pass/newPassword`, {
                 uuid: uuid,
                 password: password
             });

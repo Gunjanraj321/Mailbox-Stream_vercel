@@ -22,7 +22,7 @@ const Signup = () => {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3001/sign/signup",
+        "https://mailbox-stream-vercel.vercel.app/sign/signup",
         formData
       );
 

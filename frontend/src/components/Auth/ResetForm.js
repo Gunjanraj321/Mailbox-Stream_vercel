@@ -27,7 +27,7 @@ const ResetForm = () => {
     }
     try {
       await axios.post(
-        "http://localhost:3001/pass/forgotpassword",
+        "https://mailbox-stream-vercel.vercel.app/pass/forgotpassword",
         formData
       );
       alert("Recovery Mail Sent , PLease check your Mail.")

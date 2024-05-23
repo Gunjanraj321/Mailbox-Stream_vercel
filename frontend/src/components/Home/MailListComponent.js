@@ -12,7 +12,7 @@ const MailListComponent = () => {
 
   const fetchMails = async () => {
     try {
-      const response = await axios.get(`http://localhost:3001/mail/fetch`, {
+      const response = await axios.get(`https://mailbox-stream-vercel.vercel.app/mail/fetch`, {
         headers: {
           Authorization: `${token}`,
         },
@@ -43,7 +43,7 @@ const MailListComponent = () => {
       console.log(mailId);
       try {
         await axios.patch(
-          `http://localhost:3001/mail/read/${mailId}`,
+          `https://mailbox-stream-vercel.vercel.app/mail/read/${mailId}`,
           {},
           {
             headers: {
@@ -66,7 +66,7 @@ const MailListComponent = () => {
 
   const handleDeleteMail = async (mailId) => {
     try {
-      await axios.delete(`http://localhost:3001/mail/${mailId}`, {
+      await axios.delete(`https://mailbox-stream-vercel.vercel.app/mail/${mailId}`, {
         headers: {
           Authorization: `${token}`,
         },

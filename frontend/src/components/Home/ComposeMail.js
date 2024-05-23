@@ -31,7 +31,7 @@ const ComposeMail = () => {
     };
     try {
       await axios.post(
-        "http://localhost:3001/mail/send",
+        "https://mailbox-stream-vercel.vercel.app/mail/send",
         details,
         {
           headers: {

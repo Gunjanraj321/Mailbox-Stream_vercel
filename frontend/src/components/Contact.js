@@ -15,8 +15,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here, e.g., send data to backend
-    console.log('Form submitted:', formData);
     setSubmitted(true);
   };
 
