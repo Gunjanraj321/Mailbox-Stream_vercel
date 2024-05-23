@@ -47,3 +47,5 @@ async function initiate() {
 }
 
 initiate();
+
+module.exports = app;
