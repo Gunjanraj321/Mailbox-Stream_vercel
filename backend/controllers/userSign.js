@@ -32,7 +32,7 @@ const processSignUp = async (req, res) => {
     const subject = "Registration Successful";
     const text = "Thank you for registering. Your registration was successful.";
     
-    // await sendSuccessEmail(email, subject, text);
+    await sendSuccessEmail(email, subject, text);
 
     res.status(201).json({
       message: "registration successful.",
@@ -64,7 +64,7 @@ const processLogin = async (req, res) => {
 
       const subject = "Login Successful";
       const text = "Thank you for logging in. Your login was successful.";
-      // await sendSuccessEmail(email, subject, text);
+      await sendSuccessEmail(email, subject, text);
       res
         .status(200)
         .json({ message: "login successfully", token: token, email: email });
