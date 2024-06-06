@@ -3,6 +3,8 @@
 Mailbox Stream is a web application that provides a user-friendly interface for managing emails. It includes features such as composing, reading, and deleting emails, as well as user authentication.
 Access MyWebPage Click(https://mailbox-stream-vercel-uvax.vercel.app/)
 
+Note:- mail will be send to only user registered this webpage..
+
 ## Table of Contents
 
 - [Features](#features)
